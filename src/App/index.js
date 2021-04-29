@@ -1,36 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import SharkTank from '../components/SharkTank';
+import {
+  dearlyBeloved, livingStudents, students
+} from '../helpers/data/studentsData';
 import './App.scss';
 
 function App() {
-  const [domWriting, setDomWriting] = useState('Nothing Here!');
+  const [aliveStudents, setAliveStudents] = useState([]);
+  const [deadStudents, setDeadStudents] = useState([]);
 
-  const handleClick = (e) => {
-    console.warn(`You clicked ${e.target.id}`);
-    setDomWriting(`You clicked ${e.target.id}! Check the Console!`);
-  };
+  useEffect(() => {
+    setAliveStudents(livingStudents());
+    setDeadStudents(dearlyBeloved());
+  }, []);
+
+  console.warn(students, 'These are alive', aliveStudents, deadStudents);
 
   return (
     <div className='App'>
-      <h2>INSIDE APP COMPONENT</h2>
-      <div>
-        <button
-          id='this-button'
-          className='btn btn-info'
-          onClick={handleClick}
-        >
-          I am THIS button
-        </button>
-      </div>
-      <div>
-        <button
-          id='that-button'
-          className='btn btn-primary mt-3'
-          onClick={handleClick}
-        >
-          I am THAT button
-        </button>
-      </div>
-      <h3>{domWriting}</h3>
+      <h2>SHARK TANK</h2>
+      <SharkTank
+      aliveStudents={aliveStudents}
+      />
     </div>
   );
 }
