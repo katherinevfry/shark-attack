@@ -1,17 +1,16 @@
 import React from 'react';
 import {
   Card,
-  CardTitle,
-  CardText
+  CardTitle
 } from 'reactstrap';
 import PropTypes from 'prop-types';
+import fishy from '../fishy2.png';
 
 function LiveStudent({ ...student }) {
   return (
     <div>
-      <Card id="card" body>
-      <CardTitle tag="h5">{student.firstName} {student.lastName}</CardTitle>
-      <CardText>status: alive</CardText>
+      <Card id="live-card" style={{ backgroundImage: `url(${fishy})` }} body>
+      <CardTitle id="fish-name" tag="h5">{student.firstName} {student.lastName}</CardTitle>
     </Card>
     </div>
   );

@@ -155,10 +155,11 @@ const dearlyBeloved = () => {
   return deadStudents;
 };
 
-const followTheLight = (taco) => {
-  const fishBait = students.filter((student) => student.id === taco);
-  fishBait[0].isDead = true;
-  return fishBait;
+const followTheLight = () => {
+  const fishBait = livingStudents();
+  const randomStud = fishBait[Math.floor(Math.random() * fishBait.length)];
+  fishBait[fishBait.indexOf(randomStud)].isDead = true;
+  return [livingStudents(), dearlyBeloved()];
 };
 
 export {

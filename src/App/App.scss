@@ -1,38 +1,38 @@
-.App {
+#button {
+  margin: 0;
+}
+#live-card {
+  width: 10rem;
+  border: none;
+  height: 10rem;
   text-align: center;
+  margin:10px;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  background-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#fish-name {
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shark-tank, .graveyard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.shark-tank {
+  background-color: lightskyblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#dead-card {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width:10rem;
+  height:10rem;
+  text-align: center;
+  background-color: lightgray;
+  margin:10px;
 }
