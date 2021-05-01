@@ -19,10 +19,10 @@ function App() {
 
   return (
     <div className='App'>
+      <h2>SHARK TANK</h2>
       <Button id="button" color="info"
       onClick={sharkAttack}
       >SHARK ATTACK</Button>
-      <h2>SHARK TANK</h2>
       <div className="shark-tank">
       {aliveStudents.map((student) => (
         <LiveStudent

@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+h2 {
+  font-family: 'Freckle Face', cursive;
+  text-align: center;
+}
+
 #button {
-  margin: 0;
+  margin: auto;
+  text-align: center;
 }
 #live-card {
   width: 10rem;
@@ -10,6 +18,8 @@
   background-color: transparent;
   background-repeat:no-repeat;
   background-size: 100%;
+  font-family: 'Freckle Face', cursive;
+  text-align: center;
 }
 
 #fish-name {
@@ -24,7 +34,13 @@
 }
 
 .shark-tank {
-  background-color: lightskyblue;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(186,229,236,1) 100%);
+}
+
+.graveyard {
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(27,120,144,1) 35%, rgba(0,100,46,1) 100%);
 }
 
 #dead-card {
@@ -35,4 +51,7 @@
   text-align: center;
   background-color: lightgray;
   margin:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Freckle Face', cursive;
+  text-align: center;
 }
