@@ -1,7 +1,14 @@
-# React Template
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0dea3557-b819-499c-97c3-c46604c1a1d8/deploy-status)](https://app.netlify.com/sites/kf-shark-attack/deploys)
+![headerimg](https://i.imgur.com/RfxtETM.png)
+# Shark Attack
+## Overview
+Want to kill off your fellow classmat--I mean fishes? Easy. Just click the shark attack button and let Mr. Shark unleash his fury. A random fish will be sent to the fishy graveyard.
 
-**Use this template to get up and running quickly on projects.**
+## Technologies:
+- react
+- vanilla js
+- html
+- sass
 
-This is just like the webpack template. Use it, create the repo, connect it to your local and `npm i`.
-
-- [Steps to deploy](https://github.com/nss-nightclass-projects/REACT-Deployment-Netlify)
+## Loom Walkthough
+- coming soon
