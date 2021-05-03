@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap';
-import GraveStone from '../components/GraveStone';
-import LiveStudent from '../components/LiveStudent';
+import FishTank from '../components/FishTank';
+import GraveYard from '../components/GraveYard';
 import {
   dearlyBeloved, followTheLight, livingStudents
 } from '../helpers/data/studentsData';
@@ -19,26 +19,16 @@ function App() {
 
   return (
     <div className='App'>
-      <h2>SHARK TANK</h2>
-      <Button id="button" color="info"
-      onClick={sharkAttack}
-      >SHARK ATTACK</Button>
-      <div className="shark-tank">
-      {aliveStudents.map((student) => (
-        <LiveStudent
-          key={student.id}
-          {...student}
-        />
-      ))}
+      <h1>SHARK ATTACK</h1>
+      <div className="buttonDiv">
+        <Button id="button" color="info"
+        onClick={sharkAttack}
+        >SHARK ATTACK</Button>
       </div>
-      <h2>GRAVEYARD</h2>
-      <div className="graveyard">
-      {deadStudents.map((student) => (
-        <GraveStone
-          key={student.id}
-          {...student}
-        />
-      ))}
+
+      <div className='appContainer'>
+        <FishTank aliveStudents={aliveStudents}/>
+        <GraveYard deadStudents={deadStudents}/>
       </div>
     </div>
   );
