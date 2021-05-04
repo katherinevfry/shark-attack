@@ -11,4 +11,4 @@ Want to kill off your fellow classmat--I mean fishes? Easy. Just click the shark
 - sass
 
 ## Loom Walkthough
-- coming soon
+https://www.loom.com/share/01c57ea914e44cfdaa2c75ac2cb639d2
