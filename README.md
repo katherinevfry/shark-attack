@@ -4,6 +4,12 @@
 ## Overview
 Want to kill off your fellow classmat--I mean fishes? Easy. Just click the shark attack button and let Mr. Shark unleash his fury. A random fish will be sent to the fishy graveyard.
 
+## Link to Deployed Project
+https://kf-shark-attack.netlify.app/
+
+## User Stories
+- The user can press the "Shark Attack" button, which will randomly select a fish to send to the graveyard.
+
 ## Technologies:
 - react
 - vanilla js
