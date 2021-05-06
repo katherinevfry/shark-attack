@@ -21,9 +21,11 @@ function App() {
     <div className='App'>
       <h1>SHARK ATTACK</h1>
       <div className="buttonDiv">
-        <Button id="button" color="info"
-        onClick={sharkAttack}
-        >SHARK ATTACK</Button>
+        {
+          aliveStudents.length !== 0 && <Button id="button" color="info"
+          onClick={sharkAttack}
+          >SHARK ATTACK</Button>
+        }
       </div>
 
       <div className='appContainer'>
